@@ -193,6 +193,7 @@ nav ul li a{
     margin-bottom: 20px;
     color:  #fff;
     position: relative;
+    overflow: hidden;
 }
 .single-service img{
     width: 100%;
@@ -207,15 +208,15 @@ nav ul li a{
     cursor: pointer;
     background: linear-gradient(rgba(0,0,0,0.5),#869dc7);
     opacity: 0;
-    transition: 1s;
+    transition: 0.3s;
 }
 .single-service:hover .overlay{
     opacity: 1;
 }
 .service-desc{
-    width: 80%;
+    width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: -100%;
     left: 50%;
     opacity: 0.6;
     transform: translateX(-50%);
@@ -232,7 +233,7 @@ hr{
     font-size: 14px;
 }
 .single-service:hover  .service-desc{
-    bottom: 40%;
+    bottom: 10px;
     opacity: 1s;
 }
 @media screen and (max-width: 770px){
